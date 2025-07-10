@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do An</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#home" class="logo"> <img src="images/aura.png" alt=""> </a>
+
+    <form action="" class="search-form">
+        <input type="search" name="" placeholder="Tìm kiếm..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+    </div>
+
+</header>
+
+<!-- navbar section  -->
+
+<nav class="navbar">
+    <div id="close-navbar" class="fas fa-times"></div>
+    <a href="#home">home</a>
+    <a href="#shop">shop</a>
+    <a href="#gallery">gallery</a>
+    <a href="#team">team</a>
+    <a href="#arrivals">arrivals</a>
+    <a href="#blogs">blogs</a>
+</nav>
+<section class="home" id="home">
+
+    <div class="slide active">
+        <div class="content">
+            <img src="images/content-img-1.png" alt="">
+            <span>Ra mắt 2025</span>
+            <h3>mỹ phẩm</h3>
+            <a href="#" class="btn">đọc thêm</a>
+            <div class="controls">
+                <div class="fas fa-angle-left" onclick="prev()"></div>
+                <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="images/home-img-1.png" alt="">
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="content">
+            <img src="images/content-img-2.png" alt="">
+            <span>Ra Mắt 2025</span>
+            <h3>phụ kiện</h3>
+            <a href="#" class="btn">đọc thêm</a>
+            <div class="controls">
+                <div class="fas fa-angle-left" onclick="prev()"></div>
+                <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="images/home-img-2.png" alt="">
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="content">
+            <img src="images/content-img-3.png" alt="">
+            <span>Bộ Sưu Tập Mới</span>
+            <h3>Chăm sóc da</h3>
+            <a href="#" class="btn">Đọc thêm</a>
+            <div class="controls">
+                <div class="fas fa-angle-left" onclick="prev()"></div>
+                <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="images/home-img-3.png" alt="">
+        </div>
+    </div>
+
+</section>
+
+
+
+<section class="category">
+
+    <a href="#" class="box">
+        <img src="images/category-1.png" alt="">
+        <p>mỹ phẩm</p>
+    </a>
+
+    <a href="#" class="box">
+        <img src="images/category-2.png" alt="">
+        <p>trang điểm</p>
+    </a>
+
+    <a href="#" class="box">
+        <img src="images/category-3.png" alt="">
+        <p>phấn</p>
+    </a>
+
+    <a href="#" class="box">
+        <img src="images/category-4.png" alt="">
+        <p>kem dưỡng</p>
+    </a>
+
+    <a href="#" class="box">
+        <img src="images/category-5.png" alt="">
+        <p>son môi</p>
+    </a>
+
+    <a href="#" class="box">
+        <img src="images/category-6.png" alt="">
+        <p>mascara</p>
+    </a>
+
+</section>
+<section class="about" id="about">
+
+    <div class="content">
+        <span>tại sao chọn chúng tôi?</span>
+        <h3>trang điểm để tạo nên sự khác biệt</h3>
+        <p></p>
+        <a href="#" class="btn">Đọc thêm</a>
+    </div>
+    
+</section>
+<section class="shop" id="shop">
+
+    <div class="heading">
+        <h1>sản phẩm nổi bật</h1>
+        <p></p>
+    </div>
+
+    <div class="swiper products-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/product-1.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>sản phẩm</p>
+                    <div class="price">750.000đ <span>1.000.000đ</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/product-2.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>sản phẩm</p>
+                    <div class="price">825.000đ <span>1.100.000đ</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/product-3.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>sản phẩm</p>
+                    <div class="price">750.000đ <span>1.000.000đ</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/product-4.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>sản phẩm</p>
+                    <div class="price">750.000đ <span>1.000.000đ</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/product-5.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>sản phẩm</p>
+                    <div class="price">750.000đ <span>1.000.000đ</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/product-6.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>sản phẩm</p>
+                    <div class="price">750.000đ <span>1.000.000đ</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/product-7.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>sản phẩm</p>
+                    <div class="price">750.000đ <span>1.000.000đ</span></div>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <span class="discount">-25%</span>
+                    <img src="images/product-8.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>sản phẩm</p>
+                    <div class="price">750.000đ <span>1.000.000đ</span></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+<section class="gallery" id="gallery">
+
+    <div class="heading">
+        <h1>trải nghiệm thực tế</h1>
+        <p>mô tả gì vào đây</p>
+    </div>
+
+    <div class="lightbox">
+        <a href="images/img-1.jpg"><img src="images/img-1.jpg" alt=""></a>
+        <a href="images/img-2.jpg"><img src="images/img-2.jpg" alt=""></a>
+        <a href="images/img-3.jpg"><img src="images/img-3.jpg" alt=""></a>
+        <a href="images/img-4.jpg"><img src="images/img-4.jpg" alt=""></a>
+        <a href="images/img-5.jpg"><img src="images/img-5.jpg" alt=""></a>
+        <a href="images/img-6.jpg"><img src="images/img-6.jpg" alt=""></a>
+    </div>
+
+</section>
+<section class="team" id="team">
+
+    <div class="heading">
+        <h1>đội ngũ của chúng tôi</h1>
+        <p>đội ngũ chuyên nghiệp và tận tâm</p>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="images/team-1.png" alt="">
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                   <!-- <a href="#" class="fab fa-twitter"></a> -->
+                    <a href="#" class="fab fa-instagram"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Thế Phương</h3>
+                <p>nhà thiết kế</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/team-2.png" alt="">
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                <!-- <a href="#" class="fab fa-twitter"></a> -->
+                    <a href="#" class="fab fa-instagram"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Xuân Minh</h3>
+                <p>nhà tạo mẫu</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/team-3.png" alt="">
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Anh Thư</h3>
+                <p>nhà tạo mẫu</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="arrivals" id="arrivals">
+
+    <div class="heading">
+        <h1>Sản phẩm mới</h1>
+        <p>mô tả gì vào đây</p>
+    </div>
+
+    <div class="swiper arrivals-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>sản phẩm</p>
+                    <div class="price">999.000đ <span>1.250.000đ</span></div>
+                    <a href="#" class="btn">thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>sản phẩm</p>
+                    <div class="price">999.000đ <span>1.250.000đ</span></div>
+                    <a href="#" class="btn">thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>sản phẩm</p>
+                    <div class="price">999.000đ <span>1.250.000đ</span></div>
+                    <a href="#" class="btn">thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-4.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>sản phẩm</p>
+                    <div class="price">999.000đ <span>1.250.000đ</span></div>
+                    <a href="#" class="btn">thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>sản phẩm</p>
+                    <div class="price">999.000đ <span>1.250.000đ</span></div>
+                    <a href="#" class="btn">thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-6.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>sản phẩm</p>
+                    <div class="price">999.000đ <span>1.250.000đ</span></div>
+                    <a href="#" class="btn">thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-7.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>sản phẩm</p>
+                    <div class="price">999.000đ <span>1.250.000đ</span></div>
+                    <a href="#" class="btn">thêm vào giỏ</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/arrival-8.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>sản phẩm</p>
+                    <div class="price">999.000đ <span>1.250.000đ</span></div>
+                    <a href="#" class="btn">thêm vào giỏ</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+    
+</section>
+
+<section class="reviews">
+
+    <div class="swiper reviews-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-1.png" alt="">
+                    <div class="info">
+                        <h3>Thu Nết</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">viết bình luận về sản phẩm</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-2.png" alt="">
+                    <div class="info">
+                        <h3>Thùy Linh</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">viết bình luận về sản phẩm</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-3.png" alt="">
+                    <div class="info">
+                        <h3>Thu Thảo</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">viết bình luận về sản phẩm</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-4.png" alt="">
+                    <div class="info">
+                        <h3>Văn Tuyên</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">viết bình luận về sản phẩm</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-5.png" alt="">
+                    <div class="info">
+                        <h3>Thái Duy</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">viết bình luận về sản phẩm</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="user">
+                    <img src="images/pic-6.png" alt="">
+                    <div class="info">
+                        <h3>Toán Lee</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">viết bình luận về sản phẩm</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="service">
+
+    <div class="box">
+        <img src="images/service-1.png" alt="">
+        <h3>miễn phí vận chuyển</h3>
+        <p>Khi mua hàng trên 1 triệu đồng</p>
+    </div>
+
+    <div class="box">
+        <img src="images/service-2.png" alt="">
+        <h3>phương thức thanh toán</h3>
+        <p>Chấp nhận nhiều hình thức thanh toán khác nhau</p>
+    </div>
+
+    <div class="box">
+        <img src="images/service-3.png" alt="">
+        <h3>hỗ trợ 24/7</h3>
+        <p>Chúng tôi luôn sẵn sàng hỗ trợ bạn bất cứ lúc nào</p>
+    </div>
+
+</section>
+
+<section class="blogs" id="blogs">
+
+    <div class="heading">
+        <h1>blog hàng ngày của chúng tôi</h1>
+        <p>Các bạn có thể ghé qua các trang mạng xã hội của chúng tôi</p>
+    </div>
+
+    <div class="swiper blogs-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/img-1.jpg" alt="">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by Anh Thư </a>
+                        <a href="#"> <i class="fas fa-clock"></i> 6 tháng 5 năm 2025 </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>chọn loại son như thế nào</h3>
+                    <p>mô tả về cách chọn loại son phù hợp với từng loại môi</p>
+                    <a href="#" class="btn">đọc thêm</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/img-2.jpg" alt="">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by Xuân Minh </a>
+                        <a href="#"> <i class="fas fa-clock"></i> 25 tháng 5 năm 2025 </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>cách để có một làn da đẹp</h3>
+                    <p>mô tả về cách chăm sóc da mặt để có làn da khỏe mạnh</p>
+                    <a href="#" class="btn">đọc thêm</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/img-3.jpg" alt="">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by Anh Thư</a>
+                        <a href="#"> <i class="fas fa-clock"></i> 21 tháng 5 năm 2025 </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>phối màu son như thế nào</h3>
+                    <p>mô tả về cách phối màu son phù hợp với từng loại outfit</p>
+                    <a href="#" class="btn">đọc thêm</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/img-4.jpg" alt="">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by Xuân Minh </a>
+                        <a href="#"> <i class="fas fa-clock"></i> 7 tháng 6 năm 2025 </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Blog học makeup</h3>
+                    <p>cách trang điểm cho người mới bắt đầu</p>
+                    <a href="#" class="btn">đọc thêm</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/img-5.jpg" alt="">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by Anh Thư </a>
+                        <a href="#"> <i class="fas fa-clock"></i> 17 tháng 6 năm 2025 </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Các loại son trên thị trường</h3>
+                    <p>mô tả về các loại son phổ biến và cách chọn lựa son phù hợp</p>
+                    <a href="#" class="btn">đọc thêm</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/img-6.jpg" alt="">
+                    <div class="icons">
+                        <a href="#"> <i class="fas fa-user"></i> by Xuân Minh </a>
+                        <a href="#"> <i class="fas fa-clock"></i> 27 tháng 6 năm 2025 </a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>chọn mua các loại mỹ phẩm</h3>
+                    <p>cách chọn mua các loại mỹ phẩm phù hợp với từng loại da</p>
+                    <a href="#" class="btn">đọc thêm</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a class="link" href="#home"> <i class="fas fa-angle-right"></i> home</a>
+            <a class="link" href="#shop"> <i class="fas fa-angle-right"></i> shop</a>
+            <a class="link" href="#gallery"> <i class="fas fa-angle-right"></i> gallery</a>
+            <a class="link" href="#Đội Ngũ"> <i class="fas fa-angle-right"></i> Đội Ngũ</a>
+            <a class="link" href="#Kế Hoạch"> <i class="fas fa-angle-right"></i> Kế Hoạch</a>
+            <a class="link" href="#blogs"> <i class="fas fa-angle-right"></i> blogs</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> đơn hàng của tôi </a>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> yêu thích của tôi </a>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> danh sách mong muốn của tôi </a>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> chính sách bảo mật </a>
+            <a href="#" class="link"> <i class="fas fa-angle-right"></i> điều khoản sử dụng </a>
+        </div>
+
+        <div class="box">
+            <h3>Thông Tin Liên Hệ</h3>
+            <p> <i class="fas fa-phone"></i> +98 123 4567 </p>
+            <p> <i class="fas fa-phone"></i> +98 111 2222 </p>
+            <p> <i class="fas fa-envelope"></i> muamypham@gmail.com </p>
+            <p> <i class="fas fa-map"></i> 218 Lĩnh Nam, Hoàng Mai, Hà Nội </p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+               <!-- <a href="#" class="fab fa-twitter"></a>-->
+                <a href="#" class="fab fa-instagram"></a>
+               <!--<a href="#" class="fab fa-linkedin"></a>-->
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Hộp Thư</h3>
+            <p>Đăng ký để nhận thông tin cập nhật mới nhất</p>
+            <form action="">
+                <input type="email" name="" placeholder="nhập email của bạn" id="" class="email">
+                <input type="submit" value="đăng ký" class="btn">
+            </form>
+        </div>
+
+   </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+<script>
+    lightGallery(document.querySelector('.gallery .lightbox'));
+</script>
+    
+</body>
+</html>
